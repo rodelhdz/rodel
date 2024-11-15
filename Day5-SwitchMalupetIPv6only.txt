@@ -332,7 +332,7 @@ kabit PC = 30s
 putol trunk, recover =30s, acceptable? BANK,HOst,Pol,Mil
 
 TASK10: Rapid Spanning-tree Protocol: 802.1w
-TAAs/BABA: tikam si wonderWoman
+TAAs/BABA: tikam si wonderWoman/ bilis labasan
 config t
 spanning-tree Mode Rapid-pvst
 do sh spanning-tree vlan 1
