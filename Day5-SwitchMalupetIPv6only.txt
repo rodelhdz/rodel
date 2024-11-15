@@ -146,7 +146,7 @@ How to jailBreak forgotten Password:
 
 !@@@CORE SWITCH SA TAAS
 config t
-   hostname COREtaas_
+   hostname COREtaas51
    enable secret pass
    service password-encryption
    no logging console
@@ -161,19 +161,19 @@ config t
       exec-timeout 0 0
    Int Vlan 1
      no shutdown
-	 ip add 10._.1.2 255.255.255.0
+	 ip add 10.51.1.2 255.255.255.0
 	 description MGMTDATA
    Int Vlan 10
      no shutdown
-	 ip add 10._.10.2 255.255.255.0
+	 ip add 10.51.10.2 255.255.255.0
 	 description WIRELESS
    Int Vlan 50
      no shutdown
-	 ip add 10._.50.2 255.255.255.0
+	 ip add 10.51.50.2 255.255.255.0
 	 description IPCCTV
    Int Vlan 100
      no shutdown
-	 ip add 10._.100.2 255.255.255.0
+	 ip add 10.51.100.2 255.255.255.0
 	 description VOICEVLAN
 
 !@@@LeafSwitchONLY
@@ -485,7 +485,7 @@ config t
 hostname PLDTITO
 Track 1 Int gi 0/1 line-protocol
 Int vlan 1
-standby 1 ip 10.__.1.6
+standby 1 ip 10.51.1.6
 standby 1 preempt
 standby 1 Priority 150
 standby 1 Track 1 decrement 60
@@ -503,7 +503,7 @@ COREBABA/GLOBE:
 config t
 hostname GLOBEITO
 Int vlan 1
-standby 1 ip 10.__.1.6
+standby 1 ip 10.51.1.6
 standby 1 preempt
 standby 1 Priority 100
 
